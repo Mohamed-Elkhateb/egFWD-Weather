@@ -1,10 +1,27 @@
 # Weather-Journal App Project
 
 ## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+this app is to get and update async weather data from OpenWeatherMap website using zip code. 
 
 ## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+just add a zip code to the input field and click on generate and the weather data will display,
+to post a new weather data you should post on /weather rout using three inputs (
+* emperature
+* date
+* userresponse
+).
+in x-www-urlencoded format 
+Example : http://localhost:2021/weather
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+using this raw json object
+[
+    {
+        "temperature": "50",
+        "date": "01/10/2021",
+        "userresponse": "testing my user input"
+    }
+]
+
+if so the userresponse attribute will be added to the displayed data on screen.
+
+
